@@ -88,3 +88,13 @@ function reverse(str){
 }
 let favourite = "JavaScript is Awesome";
 //console.log(reverse(favourite));
+
+
+//Take a sentence with extra whitespace and use string methods to remove the extra spaces, leaving only single spaces between words.
+
+function removeSpace(str){
+    let splitedString =  str.split(" ").join(" ").trim().replace("  "," ");
+    return splitedString;
+}
+let stringWithSpace = " I Love Javascript and I want to be a  Programmer. ";
+//console.log(removeSpace(stringWithSpace));
