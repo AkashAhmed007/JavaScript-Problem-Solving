@@ -3,7 +3,6 @@
 function stringLength(str){
     return str.length;
 }
-
 const sentence = "I am a Web Developer";
 const length = stringLength(sentence);
 //console.log(length)
@@ -15,7 +14,6 @@ function CharAtIndex(str,index){
     let indexNumber = str.charAt(index);
     return indexNumber;
 }
-
 let text = "I Love Programming";
 let index = 7;
 let result = CharAtIndex(text,index);
@@ -28,9 +26,19 @@ function substring(str,start,end){
     let extractString = str.substring(start,end);
     return extractString;
 }
-
 let hobby = "I Love Programming and Coding";
 let start = 7;
 let end = 29;
 let output = substring(hobby,start,end);
-console.log(output);
+//console.log(output);
+
+
+// Take a sentence as input and split it into words using the split() method. Count and display the number of words in the sentence.
+
+function countAndDisplay(str){
+    let display = str.split(" ").length;
+    return display;
+}
+let input = "I Love Programming and I want to be a Developer.";
+let display = countAndDisplay(input);
+console.log(display);
