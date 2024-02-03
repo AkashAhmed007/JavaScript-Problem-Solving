@@ -63,3 +63,28 @@ function indexOfCharacter(str,c){
 let para = "I want to be Web Developer and I am learning JavaScript";
 let indexNumber = indexOfCharacter(para,"r")
 //console.log(indexNumber);
+
+
+//Implement a program that reverses a given string using string manipulation methods.
+
+function reverse(str){
+    //it is solved by using buit-in method.
+    // return str.split("").reverse().join("")
+
+
+    // here solved by without built-in-method but using for of loop.
+    // let reversed = "";
+    // for(let char of str){
+    //     reversed = char + reversed;
+    //     console.log(reversed)
+    // }
+    
+    //here another way to solve the problem
+    let reversed = "";
+    for(let i = str.length - 1; i >= 0; i--){
+        reversed += str[i];
+    }
+    return reversed;
+}
+let favourite = "JavaScript is Awesome";
+//console.log(reverse(favourite));
