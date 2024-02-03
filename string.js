@@ -13,13 +13,24 @@ const length = stringLength(sentence);
 
 function CharAtIndex(str,index){
     let indexNumber = str.charAt(index);
-
     return indexNumber;
-
 }
 
 let text = "I Love Programming";
 let index = 7;
 let result = CharAtIndex(text,index);
-console.log(result);
+//console.log(result);
 
+
+// Write a program that takes a string and two indices (start and end). Use the substring() method to extract and display the substring between the given indices.
+
+function substring(str,start,end){
+    let extractString = str.substring(start,end);
+    return extractString;
+}
+
+let hobby = "I Love Programming and Coding";
+let start = 7;
+let end = 29;
+let output = substring(hobby,start,end);
+console.log(output);
