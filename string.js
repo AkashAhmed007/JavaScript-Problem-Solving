@@ -41,4 +41,15 @@ function countAndDisplay(str){
 }
 let input = "I Love Programming and I want to be a Developer.";
 let display = countAndDisplay(input);
-console.log(display);
+//console.log(display);
+
+
+// Create a program that takes a sentence and allows the user to search for a word or phrase and replace it with another word or phrase using the replace() method.
+
+function replaceWord(str){
+    let replaced = str.replace("Designer" , "Developer");
+    return replaced;
+}
+let words = "I am a Web Designer";
+let newSentence = replaceWord(words);
+//console.log(newSentence);
