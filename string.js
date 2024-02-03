@@ -53,3 +53,13 @@ function replaceWord(str){
 let words = "I am a Web Designer";
 let newSentence = replaceWord(words);
 //console.log(newSentence);
+
+
+// Write a program that takes a string and a character as input. Use the indexOf() method to find and display the index of the first occurrence of that character in the string.
+
+function indexOfCharacter(str,c){
+    return str.indexOf(c);
+}
+let para = "I want to be Web Developer and I am learning JavaScript";
+let indexNumber = indexOfCharacter(para,"r")
+//console.log(indexNumber);
