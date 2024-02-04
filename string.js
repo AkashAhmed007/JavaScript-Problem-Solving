@@ -98,3 +98,12 @@ function removeSpace(str){
 }
 let stringWithSpace = " I Love Javascript and I want to be a  Programmer. ";
 //console.log(removeSpace(stringWithSpace));
+
+
+// Write a program that checks if a given string is a palindrome (reads the same forwards and backwards) using string methods.
+
+function palindorme(str){
+    return str === str.split("").reverse().join("") ? "It is palindrome" : "it is not palindrome";
+}
+let letters = 'english';
+//console.log(palindorme(letters))
