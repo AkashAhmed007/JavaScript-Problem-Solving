@@ -107,3 +107,19 @@ function palindorme(str){
 }
 let letters = 'english';
 //console.log(palindorme(letters))
+
+
+// Convert string to title case in JavaScript
+
+function titleCase(str){
+    let lowerString = str.toLowerCase();
+    let splitString = lowerString.split(" ");
+    for(let i = 0; i < splitString.length; i++){
+         splitString[i] = splitString[i].charAt(0).toUpperCase() + splitString[i].slice(1);
+    }
+    return splitString.join(" ");  
+}
+
+let title = "I LOve proGramming VERy mUCh";
+let answer = titleCase(title);
+// console.log(answer);
