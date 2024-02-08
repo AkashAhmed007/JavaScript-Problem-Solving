@@ -10,5 +10,17 @@ function getMax(numbers){
     }
     return max;
 }
-let tallest = getMax(heights);
-console.log("tallest number is: ", tallest)
+
+function getMin(numbers){
+    let min = numbers[0];
+    for(let num of numbers){
+        if(num < min){
+            min = num;
+        }
+    }
+    return min;
+}
+// console.log("max number is: " , getMax(heights))
+// console.log("min number is: " , getMin(heights))
+
+
